@@ -1,0 +1,215 @@
+@media screen and (max-width: 1024px) {
+  header {
+    background-color: #FFFFFF;
+    z-index: 10;
+    position: fixed;
+    padding: 20px 0;
+    height: 60px;
+  }
+
+  main {
+    position: absolute;
+    top: 60px;
+  }
+  
+  .MenuTrigger,.MenuTrigger span {
+    display: inline-block;
+    transition: all 0.5s;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+  }
+  .MenuTrigger {
+    position: relative;
+    width: 32px;
+    height: 20px;
+    background: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+  }
+  .MenuTrigger span {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #172a22;
+    border-radius: 4px;
+  }
+  .MenuTrigger span:nth-of-type(1) {
+    top: 0;
+  }
+  .MenuTrigger span:nth-of-type(2) {
+    top: 50%;
+  }
+  .MenuTrigger span:nth-of-type(3) {
+    top: 100%;
+  }
+
+    #checkbox:checked + label span:nth-of-type(1) {
+      transform: translateY(10px) rotate(-45deg);
+    }
+    #checkbox:checked + label span:nth-of-type(2) {
+      opacity: 0;
+    }
+    #checkbox:checked + label span:nth-of-type(3) {
+      transform: translateY(-10px) rotate(45deg);
+    }
+
+  .HeaderRight {
+    display: block;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 100%;
+    min-height: 100%;
+    top: 60px;
+    left: 100%;
+    padding-top: 20px;
+    z-index: 90;
+    transition: all 0.5s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .HeaderRight li {
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .HeaderRight li:last-child {
+    width: 250px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  .HeaderItem span:first-child {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-family: 'Lato',sans-serif;
+  }
+
+  .HeaderItem span:last-child {
+    display: inline-block;
+    color: #F79214;
+    letter-spacing: 2px;
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 14px 0 4px 0;
+  }
+
+  .HeaderButton {
+    font-size: 16px;
+    height: 60px;
+  }
+
+  #checkbox:checked ~ .HeaderRight {
+    left: 0;
+  }
+
+  #checkbox:checked ~ .FooterFixed {
+    display: none !important;
+  }
+
+  .VideoPage {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .VideoPage video {
+    width: 75%;
+    margin-bottom: 16px;
+  }
+
+  .VideoText {
+    width: 75%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 757px) {
+  header {
+    padding: 15px 0;
+  }
+  
+  .HeaderContainer {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+
+  .HeaderImage {
+    height: 16px;
+    width: auto;
+  }
+  
+  .TopView {
+    background-image: none;
+    padding-top: 0;
+  }
+
+  .TopImageSP {
+    display: block;
+    width: 100%;
+  }  
+
+  .TopContainer {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+    margin-top: -45vw;
+  }
+
+  .TopPage {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .TopPageh2 {
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .TopPageImages img:nth-child(1) {
+    width: 27.5%;
+  }
+
+  .TopPageImages img:nth-child(3) {
+    width: 27.5%;
+  }
+
+
+  .TopPageButton {
+    flex-direction: column;
+  }
+
+  .TopPageButton a:first-child {
+    width: 100%;
+  }
+
+  .TopPageButton a:last-child {
+    display: none;
+  }  
+}
+
+@media screen and (max-width: 426px) {
+  .FooterFixed {
+    background-color: #F4F5F7;
+    bottom: 0;
+    right: 0;
+    height: 114px;
+    width: 100%;
+  }
+
+  .FooterFixed img {
+    display: block;
+    width: 98%;
+    margin: -4px auto 28px;
+  }
+}
+
